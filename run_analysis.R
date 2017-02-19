@@ -1,15 +1,15 @@
 library(reshape2)
 
 ## read features
-features <- read.table("./Data/UCI HAR Dataset/features.txt")
+features <- read.table("./UCI HAR Dataset/features.txt")
 names(features) <- c("id", "desc")
 ## read activity labels
-actlabels <- read.table("./Data/UCI HAR Dataset/activity_labels.txt")
+actlabels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 names(actlabels) <- c("id", "desc")
 
 ## read training & test mesurement
-Xtrain <- read.table("./Data/UCI HAR Dataset/train/X_train.txt")
-Xtest <- read.table("./Data/UCI HAR Dataset/test/X_test.txt")
+Xtrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
+Xtest <- read.table("./UCI HAR Dataset/test/X_test.txt")
 ## merge training & test mesurement
 Xdata <- rbind(Xtrain, Xtest)
 ## label dataset using features vector
@@ -27,20 +27,20 @@ names(measure) <- sub("mean\\(\\)", " mean value", names(measure))
 names(measure) <- sub("std\\(\\)", " standard deviation", names(measure))
 
 ## Read activity data
-ytrain <- read.table("./Data/UCI HAR Dataset/train/y_train.txt")
-ytest <- read.table("./Data/UCI HAR Dataset/test/y_test.txt")
+ytrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
+ytest <- read.table("./UCI HAR Dataset/test/y_test.txt")
 ## merge training & test activities
 activity <- rbind(ytrain, ytest)
-## labels the data set with descriptive variable names
+## labels the data set with descriptive variable name
 names(activity) <- "activity"
       
 ## Read subject data
-subjecttrain <- read.table("./Data/UCI HAR Dataset/train/subject_train.txt")
+subjecttrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
-subjecttest <- read.table("./Data/UCI HAR Dataset/test/subject_test.txt")
-## merge training & test activities
+subjecttest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
+## merge training & test subject data
 subject <- rbind(subjecttrain, subjecttest)
-## labels the data set with descriptive variable names
+## labels the data set with descriptive variable name
 names(subject) <- "subject"
       
 ## Merge whole dataset
@@ -57,4 +57,4 @@ meltdata <- melt(data, id = c("subject", "activity"), measure.vars=names(measure
 tidiest <- dcast(meltdata, subject+activity~variable, mean)
 
 ## write  dataset in a csv file
-write.csv(tidiest, './Data/tidiest.csv')
+write.table(tidiest, './tidiest.txt')
