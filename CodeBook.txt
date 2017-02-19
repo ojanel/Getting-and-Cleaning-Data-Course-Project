@@ -1,0 +1,83 @@
+﻿DATA DICTIONARY – TIDIEST
+
+
+DATA DICTIONARY – TIDIEST
+
+subject	: subject identifier
+		1..30
+activity : activity label
+		WALKING
+		WALKING_UPSTAIRS
+		WALKING_DOWNSTAIRS
+		SITTING
+		STANDING
+		LAYING
+
+time signal - Body accelerometer - mean value-XYZ : average mean of the of the body accelerometer time signal for X, Y and Z axis
+		0..1
+time signal - Body accelerometer - standard deviation-XYZ : average standard deviation of the of the body accelerometer time signal for X, Y and Z axis
+		-1..1
+time signal - Gravity accelerometer - mean value-XYZ : average mean of the gravity accelerometer time signal for X, Y and Z axis
+		-1..1
+time signal - Gravity accelerometer - standard deviation-XYZ : average standard deviation of the gravity accelerometer time signal for X, Y and Z axis
+		-1..1
+time signal - Body accelerometer Jerk- mean value-XYZ : average mean of the body accelerometer Jerk time signal for X, Y and Z axis
+		-1..1
+time signal - Body accelerometer Jerk- standard deviation-XYZ : average standard deviation of the body accelerometer Jerk time signal for X, Y and Z axis
+		-1..1
+time signal - Body gyroscope - mean value-XYZ : average mean of the body gyroscope time signal for X, Y and Z axis
+		-1..1
+time signal - Body gyroscope - standard deviation-XYZ : average standard deviation of the body gyroscope time signal for X, Y and Z axis
+		-1..1
+time signal - Body gyroscope Jerk- mean value-XYZ : average mean of the body gyroscope Jerk time signal for X, Y and Z axis
+		-1..1
+time signal - Body gyroscope Jerk- standard deviation-XYZ : average standard deviation of the body gyroscope Jerk time signal for X, Y and Z axis
+		-1..1
+time signal - Body accelerometer  magnitude- mean value : average mean of the body accelerometer magnitude (Euclidean norm)
+		-1..1
+time signal - Body accelerometer  magnitude- standard deviation : average standard deviation of the body accelerometer magnitude(Euclidean norm)
+		-1..1
+time signal - Gravity accelerometer  magnitude- mean value : average mean of the gravity accelerometer magnitude (Euclidean norm)
+		-1..1
+time signal - Gravity accelerometer  magnitude- standard deviation : average standard deviation of the gravity accelerometer magnitude (Euclidean norm)
+		-1..1
+time signal - Body accelerometer Jerk magnitude- mean value : average mean of the gravity accelerometer Jerk magnitude (Euclidean norm)
+		-1..1
+time signal - Body accelerometer Jerk magnitude- standard deviation : average standard deviation of the gravity accelerometer Jerk magnitude (Euclidean norm)
+		-1..1
+time signal - Body gyroscope  magnitude- mean value : average mean of the gyroscope magnitude (Euclidean norm)
+		-1..1
+time signal - Body gyroscope  magnitude- standard deviation : average standard deviation of the gyroscope magnitude (Euclidean norm)
+		-1..1
+time signal - Body gyroscope Jerk magnitude- mean value : average mean of the gyroscope magnitude (Euclidean norm)
+		-1..1
+time signal - Body gyroscope Jerk magnitude- standard deviation: average standard deviation of the gyroscope Jerk magnitude (Euclidean norm)
+		-1..1
+frequence signal - Body accelerometer - mean value-XYZ : average mean of the body accelerometer frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body accelerometer - standard deviation-XYZ : average standard deviation of the body accelerometer frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body accelerometer Jerk- mean value-XYZ : average mean of the body accelerometer Jerk frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body accelerometer Jerk- standard deviation-XYZ : average standard deviation of the body accelerometer Jerk frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body gyroscope - mean value-XYZ : average mean of the body gyroscope frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body gyroscope - standard deviation-XYZ : average standard deviation of the body gyroscope frequence signal for X, Y and Z axis
+		-1..1
+frequence signal - Body accelerometer  magnitude- mean value : average mean of the body accelerometer magnitude frequence signal
+		-1..1
+frequence signal - Body accelerometer  magnitude- standard deviation : average standard deviation of the body accelerometer magnitude frequence signal
+		-1..1
+frequence signal - Body accelerometer Jerk magnitude- mean value : average mean of the body accelerometer Jerk magnitude frequence signal
+		-1..1
+frequence signal - Body accelerometer Jerk magnitude- standard deviation : average standard deviation of the body accelerometer Jerk magnitude frequence signal
+		-1..1
+frequence signal - Body gyroscope  magnitude- mean value : average mean of the body gyroscope magnitude frequence signal
+		-1..1
+frequence signal - Body gyroscope  magnitude- standard deviation : average standard deviation of the body gyroscope magnitude frequence signal 
+		-1..1
+frequence signal - Body gyroscope Jerk magnitude- mean value : average mean of the body gyroscope Jerk magnitude frequence signal
+		-1..1
+frequence signal - Body gyroscope Jerk magnitude- standard deviation : average standard deviation of the body gyroscope magnitude frequence signal
+		-1..1
