@@ -57,4 +57,4 @@ meltdata <- melt(data, id = c("subject", "activity"), measure.vars=names(measure
 tidiest <- dcast(meltdata, subject+activity~variable, mean)
 
 ## write  dataset in a csv file
-write.table(tidiest, './tidiest.txt')
+write.table(tidiest, './tidiest.txt', row.name=FALSE)
